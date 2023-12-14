@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+        <nav class="nav">
+	<h3 class="logo">SynthStore</h3>
+	<ul class="nav_list">
+		<li class="nav_item"><a href="" class="nav_link">Синтезаторы</a></li>
+		<li class="nav_item"><a href="" class="nav_link">Драм-машины</a></li>
+		<li class="nav_item"><a href="" class="nav_link">Аксессуары</a></li>
+		<li class="nav_item"><a href="" class="nav_link">MIDI-клавиатуры</a></li>
+		<li class="nav_item"><a href="" class="nav_link">Рекордеры</a></li>
+    </ul>
+    <div class="burger" onclick="burgerClick()"> 
+    	<div class="burger_line burger_line1"></div>
+    	<div class="burger_line burger_line2"></div>
+    	<div class="burger_line burger_line3"></div>
+    </div>
+        </nav>
+		<button class="btn-menu">Menu</button>
+		<div class="menu is-active">
+			<ul class="">
+				<li>Личный кабинет</li>
+                <li>Корзина</li>
+                <li>Акции</li>
+			</ul>
+			<h4 class="themes_title">Темы</h4>
+			<ul class="themes_list">
+				<li class="themes_item">
+				<div class="dark" onclick="dark()"></div>
+				</li>
+				<li class="themes_item">
+					<div class="light" onclick="light()"></div>
+				</li>
+			</ul>
+		  </div>
+		</div>
+	</header>
+	<main class="main">
+	<section class="shop">
+		<div class="container">
+			<h1 class="shop_title">Teenage Engineering OP-1</h1>
+			<div class="itc-slider" data-slider="itc-slider">
+            <div class="itc-slider-wrapper">
+            <div class="itc-slider-items">
+            <div class="itc-slider-item">
+            <!-- Контент 1 слайда -->
+            <img src="img/Synth.jpg" class="shop_img">
+            </div>
+            <div class="itc-slider-item">
+            <!-- Контент 2 слайда -->
+            </div>
+            <div class="itc-slider-item">
+            <!-- Контент 3 слайда -->
+            </div>
+            </div>
+            </div>
+  <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+  <button class="itc-slider-btn itc-slider-btn-prev"></button>
+  <button class="itc-slider-btn itc-slider-btn-next"></button>
+</div>
+  <div class="accordion" id="accordion-1">
+		<div class="accordion__item">
+		<div class="accordion__header">
+			          О товаре:
+			      </div>
+			      <div class="accordion__body">
+			<p class="shop_text">introducing the all new OP–1 field. injected with more than a decade of
+			ideas, refinements and improvements. just to mention a few: stereo
+			throughout the whole signal chain, bluetooth midi, usb type-c, a new
+			speaker system with a passive driver for detailed, fat and loud sound,
+			a massive 24 hour battery life, multiple tapes and recording formats,
+			new great sounding reverb and the 'dimension' synth engine, an all
+			glass, flush, high resolution display. we also meticulously reworked all
+			graphics, screen by screen. did we mention fm broadcasting?
+			well, that's just some of the 100 new features:
+			</p>
+		</div>
+	</div>
+    <div class="accordion__item">
+    	<div class="accordion__header">
+    		Цена
+    	</div>
+    	<div class="accordion__body">
+    		<p class="price">2000$</p>
+    		<button class="shop_btn" id="btn" onclick="buy()">Купить</button>
+    	</div>
+	
+
+    </div>
+</div>
+			
+
+			
+		</div>
+	</section>
+	<section class="maps">
+		<div class="container">
+			<div class="google">
+				<h2 class="google_title">Гугл-карта</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726665.2737062797!2d38.45711586257874!3d44.64739497636288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f1105df93c4edb%3A0x6f9fcecec2fd115c!2z0JzRg9C30YvQutCw0LvRjNC90YvQtSDQmNC90YHRgtGA0YPQvNC10L3RgtGL!5e0!3m2!1sru!2sru!4v1700572652009!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="yandex">
+				<h2 class="yandex_title">Яндекс-карта</h2>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac31412ce4257e099ac4e519bbaf889e1de3f477556f37dc25691c404f3b6cfb7&amp;source=constructor" width="619" height="495" frameborder="0"></iframe>
+			</div>
+			
+		</div>
+		
+	</section>	
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<p class="footer_text">Все права защищены 2023</p>
+		</div>
+		
+	</footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/themes.js"></script>
+      <script src="scripts/accordion.js"></script>
+	<script src="scripts/burger.js"></script>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/itc-slider.js"></script>
+</body>
+</html>
